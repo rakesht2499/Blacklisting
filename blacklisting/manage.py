@@ -17,5 +17,19 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+def startApp():
+    if os.environ.get('RUN_MAIN') != 'true':
+        # all_ip = Ipv4.objects.all()
+        # for ip in all_ip:
+        #     print(type(ip))
+        pass
+
+
+def endApp():
+    print("Stopping the Application")
+
+
 if __name__ == '__main__':
+    startApp()
     main()
+    endApp()

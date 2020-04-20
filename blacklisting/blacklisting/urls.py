@@ -19,6 +19,8 @@ from api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('blacklist', views.Blacklist),
+    path('blacklist/', views.Blacklist),
     path('v1/blacklist', views.Ipv4Api),
     path('v1/blacklist/', views.Ipv4Api),
     path('', views.defaultView)
