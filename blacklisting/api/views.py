@@ -3,19 +3,16 @@ from django.http import HttpResponse
 from django.http import Http404
 from django.http import HttpResponseNotAllowed
 from django.views.decorators.csrf import csrf_exempt
-import json
-from django.shortcuts import get_object_or_404
-from blacklisting.settings import blacklist
-from ip_model.Exceptions import InvalidIpException
-from rest_framework.decorators import action
 
 from . models import Ipv4
 from . serializers import ipSerializer
 from blacklisting.settings import blacklist
 
+import json
+
 
 def helper():
-    print("\nInside a helper")
+    print("Loading all Ip's from Database")
     all_ip = Ipv4.objects.all()
     for x in all_ip:
         blacklist.add(x.ip)

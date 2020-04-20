@@ -19,10 +19,9 @@ def main():
 
 def startApp():
     if os.environ.get('RUN_MAIN') != 'true':
-        # all_ip = Ipv4.objects.all()
-        # for ip in all_ip:
-        #     print(type(ip))
-        pass
+        print("Blacklist Application Starting")
+    else:
+        print("Blacklisting Application is Re-loading")
 
 
 def endApp():
