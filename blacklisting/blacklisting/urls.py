@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from api import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +24,5 @@ urlpatterns = [
     path('blacklist/', views.Blacklist),
     path('v1/blacklist', views.Ipv4Api),
     path('v1/blacklist/', views.Ipv4Api),
-    path('', views.defaultView)
+    path('', TemplateView.as_view(template_name='index.html'))
 ]
