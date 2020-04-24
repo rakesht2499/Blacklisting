@@ -1,2 +1,2 @@
 # Blacklisting
-A Django application for Blacklisting Service
+An in-memory Blacklisting Service using Django framework.
