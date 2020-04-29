@@ -27,10 +27,9 @@ blacklist = Ipv4()
 SECRET_KEY = 'j4$%v38k4h@-723fq5-)#30voq+6eruplo2(jbx3rwmr2=fcg-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 

@@ -2,6 +2,7 @@ from django.db import IntegrityError
 from django.http import HttpResponse
 from django.http import Http404
 from django.http import HttpResponseNotAllowed
+from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
 from . models import Ipv4
@@ -18,17 +19,11 @@ def helper():
         blacklist.add(x.ip)
 
 
-def defaultView(request):
-    print(request.META.get('HTTP_X_FORWARDED_FOR'))
-    print(request.META.get('REMOTE_ADDR'))
-    return HttpResponse("Welcome to the Blacklisting API")
-
-
 def Blacklist(request):
     rq_ip = request.META.get('HTTP_X_FORWARDED_FOR')
     if blacklist.is_present(rq_ip):
         raise Http404
-    return HttpResponse("Welcome to the Blacklisting API ")
+    return HttpResponse()
 
 
 @csrf_exempt
@@ -50,7 +45,7 @@ def Ipv4Api(request):
             Ipv4(ip=user_ip).save()
         except IntegrityError:
             pass
-        return HttpResponse(201)
+        return HttpResponse(status=status.HTTP_201_CREATED)
     elif request.method == "DELETE":
         req_body = request.body.decode('utf-8')
         d = json.loads(json.loads(req_body))
