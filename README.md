@@ -88,6 +88,7 @@ curl -XDELETE localhost:8000/v1/blacklist
         --body '{"ip":"192.168.92.68"}'
 ```
 
+### Copyrights
 ```
 /**
  * 
