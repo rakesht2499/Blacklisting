@@ -5,7 +5,7 @@ An in-memory Blacklisting Service using Django framework.
 
 Site Under Construction
 
-## Pre-requisite
+## Pre-requisites
 
 - Docker
 
