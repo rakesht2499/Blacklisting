@@ -37,11 +37,13 @@ python manage.py runserver
 
 Lists all the IPv4 address from DB
 
+
 **Request**
 
 ```shell script
 curl -XGET 'localhost:8000/v1/blacklist'
 ```
+
 
 **Response**
 ```shell script
@@ -51,6 +53,7 @@ HTTP/1.1 200 OK
 
 ##### POST
 
+
 **Request**
 
 ```shell script
@@ -58,6 +61,7 @@ curl -XPOST 'localhost:8000/v1/blacklist' \
         --header 'Content-Type: application/json' \
         --data-raw '"{\"ip\" : \"192.168.0.3\"}"'
 ```
+
 
 **Response**
 ```shell script
@@ -74,10 +78,12 @@ curl -XDELETE 'localhost:8000/v1/blacklist' \
         --data-raw '"{\"ip\" : \"192.168.0.3\"}"'
 ```
 
+
 **Response**
 ```shell script
 HTTP/1.1 200 OK
 ```
+
 
 ##### DELETE
 
