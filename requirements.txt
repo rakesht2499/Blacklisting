@@ -1,5 +1,5 @@
 asgiref==3.2.7
-Django==3.0.7
+Django==3.0.14
 django-admin==2.0.1
 django-excel-base==1.0.4
 django-excel-response2==3.0.2
