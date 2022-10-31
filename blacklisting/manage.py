@@ -25,7 +25,7 @@ def startApp():
 
 
 def endApp():
-    print("Stopping the Application")
+    print("Blacklisting service stopped due to an internal server error or manual interruption")
 
 
 if __name__ == '__main__':
