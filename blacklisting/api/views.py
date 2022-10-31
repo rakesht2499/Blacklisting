@@ -13,7 +13,7 @@ import json
 
 
 def helper():
-    print("Loading all Ip's from Database")
+    print("Fetching IP's from database")
     all_ip = Ipv4.objects.all()
     for x in all_ip:
         blacklist.add(x.ip)
