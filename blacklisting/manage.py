@@ -19,9 +19,10 @@ def main():
 
 def startApp():
     if os.environ.get('RUN_MAIN') != 'true':
-        print("Blacklist Application Starting")
+        ba="Blacklist Application"
+        print(ba+ "Starting")
     else:
-        print("Blacklisting Application is Re-loading")
+        print(ba+ "is Re-loading")
 
 
 def endApp():
