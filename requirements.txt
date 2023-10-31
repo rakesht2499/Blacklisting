@@ -4,7 +4,7 @@ django-admin==2.0.1
 django-excel-base==1.0.4
 django-excel-response2==3.0.2
 django-six==1.0.4
-djangorestframework==3.11.2
+djangorestframework==3.11.3
 ip-model==1.0.0
 pytz==2019.3
 screen==1.0.1
