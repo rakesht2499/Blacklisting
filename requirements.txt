@@ -8,5 +8,5 @@ djangorestframework==3.11.2
 ip-model==1.0.0
 pytz==2019.3
 screen==1.0.1
-sqlparse==0.3.1
+sqlparse==0.4.4
 xlwt==1.3.0
