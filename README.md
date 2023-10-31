@@ -17,9 +17,9 @@ An in-memory Blacklisting Service using Django framework.
 
 ```shell script
 docker build -t blacklisting .
-docker run -p 8000:8000 blacklisting
+docker run -p 8080:8080 blacklisting
 ```
-The above commands start the server in port 8000
+The above commands start the server in port 8080
 
 #### Without Docker
 
