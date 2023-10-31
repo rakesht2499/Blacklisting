@@ -5,7 +5,7 @@ An in-memory Blacklisting Service using Django framework.
 
 ## Pre-requisites
 
-- Docker
+- Docker (Please see the [documentation](https://docs.docker.com/engine/install/))
 
 #### Running In local
 
